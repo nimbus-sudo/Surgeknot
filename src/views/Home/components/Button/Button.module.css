@@ -1,0 +1,46 @@
+.wrapper{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  width: 13.3rem;
+  height: max-content;
+  padding: .2rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  border: .1rem solid var(--clr-white);
+  border-radius: .1rem;
+
+  translate: 1rem 1rem;
+}
+
+.btn{
+  padding: .75rem 1.5rem;
+
+  font-family: space;
+  font-weight: 200;
+  font-size: 1rem;
+
+  border: 0 solid #000;
+  border-radius: .1rem;
+  background: var(--clr-volt);
+
+  box-sizing: content-box;
+  cursor: pointer;
+  transition: background .1s;
+}
+
+@media screen and (max-width: 768px) {
+  .btn:active{
+    background: var(--clr-silver);
+  }
+}
+
+@media (hover:hover) {
+  .btn:hover{
+    background: var(--clr-silver);
+  }
+}

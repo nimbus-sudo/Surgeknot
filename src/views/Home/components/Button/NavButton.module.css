@@ -1,0 +1,50 @@
+.btn{
+  position: absolute;
+  top: 46.85%;
+  right: 0;
+  place-content: center;
+  place-items: center;
+
+  width: 1.125rem;
+  height: max-content;
+
+  border: 0 solid #000;
+  background: none;
+
+  cursor: pointer;
+  translate: 1.65rem 0;
+  transition: rotate .3s;
+}
+
+.icon{
+  width: 100%;
+  height: auto;
+
+  fill: var(--clr-volt);
+
+  pointer-events: none;
+  transition: fill .1s, scale .1s;
+}
+
+.rotate180{
+  rotate: 180deg;
+  transition: rotate .2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .btn:active{
+    .icon{
+      fill: var(--clr-silver);
+
+      scale: 1.05;
+    }
+  }
+}
+
+@media (hover:hover) {
+  .btn:hover{
+    .icon{
+      fill: var(--clr-silver);
+    }
+  }
+}

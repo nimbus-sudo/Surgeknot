@@ -1,0 +1,37 @@
+.wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: max-content;
+
+  display: flex;
+  flex-direction: row;
+
+  translate: -2rem 1rem;
+}
+
+.heading{
+  font-family: monument;
+}
+
+.record{
+  font-size: 3.1rem;
+  letter-spacing: .25rem;
+  -webkit-text-stroke: .065rem var(--clr-white);
+  writing-mode: vertical-lr;
+
+  color: transparent;
+}
+
+.agent{
+  padding-top: 1rem;
+
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  writing-mode: vertical-lr;
+
+  color: var(--clr-silver);
+
+  opacity: .2;
+}
