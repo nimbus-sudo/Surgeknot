@@ -9,6 +9,8 @@
   width: 100%;
   height: 100%;
 
+  display: block;
+
   mask-image: linear-gradient(to bottom, #ffffff 35%, transparent 85%);
 
   overflow: hidden;
@@ -20,4 +22,20 @@
 
   object-fit: cover;
   pointer-events: none;
+}
+
+.slideUp{
+  will-change: translate, scale;
+  opacity: 0;
+  scale: .975;
+  translate: 0 1rem;
+  filter: blur(2px);
+
+  animation: slideUp .3s ease-in forwards;
+  animation-delay: .1s;
+  transform: translateZ(0);
+}
+
+@keyframes slideUp {
+  100% { opacity: 1; scale: 1; translate: 0; filter: blur(0)}
 }
