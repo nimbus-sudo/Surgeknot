@@ -20,7 +20,7 @@
   width: 100%;
   height: auto;
 
-  fill: var(--clr-volt);
+  fill: var(--clr-gray);
 
   pointer-events: none;
   transition: fill .1s, scale .1s;
@@ -34,7 +34,7 @@
 @media screen and (max-width: 768px) {
   .btn:active{
     .icon{
-      fill: var(--clr-silver);
+      fill: var(--clr-volt);
 
       scale: 1.05;
     }
@@ -44,7 +44,7 @@
 @media (hover:hover) {
   .btn:hover{
     .icon{
-      fill: var(--clr-silver);
+      fill: var(--clr-volt);
     }
   }
 }
