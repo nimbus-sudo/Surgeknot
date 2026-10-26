@@ -3,6 +3,11 @@
   src: url('./assets/fonts/monument-extended/MonumentExtended-Ultrabold.woff2');
   font-weight: 900;
 }
+@font-face {
+  font-family: monument;
+  src: url('./assets/fonts/monument-extended/MonumentExtended-Regular.woff2');
+  font-weight: 400;
+}
 
 @font-face {
   font-family: space;
