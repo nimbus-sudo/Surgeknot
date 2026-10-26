@@ -20,9 +20,9 @@ export default function Content() {
       <div className={styles.wrapper}>
         <div className={styles.content__card}>
           <div className={styles.content__container}>
-            <div className={`${styles.content}`}>
-              <h3 className={`${styles.heading} ${styles.name} ${styles.fadeUpIn}`}>Miyabi</h3>
-              <p className={`${styles.para} ${styles.fadeUpIn} `} style={{ '--delay': 1 }}><q>Order cannot be broken.</q></p>
+            <div className={`${styles.content} ${styles.fadeUpIn}`}>
+              <h3 className={`${styles.heading} ${styles.name}`}>Miyabi</h3>
+              <p className={styles.para}><q>Order cannot be broken.</q></p>
             </div>
           </div>
 

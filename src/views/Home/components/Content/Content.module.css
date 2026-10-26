@@ -97,11 +97,10 @@
 /* ANIMATIONS */ 
 .fadeUpIn{
   opacity: 0;
-  translate: 0 10px;
+  translate: 0 1rem;
   filter: blur(2px);
 
-  animation: fadeUpIn .4s ease-in forwards;
-  animation-delay: calc(var(--delay) * 125ms)
+  animation: fadeUpIn .3s ease-in forwards;
 }
 
 @keyframes fadeUpIn {
