@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
 
-  border: .1rem solid var(--clr-white);
   border-radius: .1rem;
 
   translate: 1rem 1rem;
