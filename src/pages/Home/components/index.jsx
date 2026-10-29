@@ -1,0 +1,6 @@
+export { default as Heading } from './Heading/Heading.jsx'
+export { default as IconBox } from './Icon-box/Icon-box.jsx'
+export { default as InfoBox } from './Info-box/Info-box.jsx'
+export { default as Buttons } from './Buttons/Buttons.jsx'
+export { default as Marquee } from './Marquee-Strip/Marquee.jsx'
+export { default as Portrait } from './Display-Only/Portrait.jsx'

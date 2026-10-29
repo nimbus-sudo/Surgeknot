@@ -10,7 +10,7 @@ export default function Navbar() {
 
         <nav className={styles.btn__container}>
           <ul>
-            <li className={styles.currentTab}>W-ENGINES</li>
+            <li className={styles.currentTab}>Home</li>
           </ul>
           <button className={styles.btn}>MENU</button>
         </nav>

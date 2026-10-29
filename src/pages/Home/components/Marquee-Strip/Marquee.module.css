@@ -1,0 +1,47 @@
+@property --first{
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%; 
+}
+@property --second{
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+
+.wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.text_container{
+  align-content: center;
+
+  width: max-content;
+  height: 1.65rem;
+
+  background: var(--clr-volt);
+  mask-image: linear-gradient(to left, var(--clr-volt) var(--first), transparent var(--second));
+
+  rotate: -35deg;
+  translate: -8rem 12.5rem;
+  animation: reveal 1s var(--ease-in) 120ms forwards;
+}
+
+.text_container span {
+  font-family: monument;
+  font-size: .95rem;
+
+  color: var(--clr-casual-black);
+}
+
+@keyframes reveal {
+  to {--first: 95%; --second: 100%;}
+}

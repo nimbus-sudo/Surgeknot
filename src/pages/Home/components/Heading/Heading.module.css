@@ -1,0 +1,44 @@
+.wrapper{
+  align-items: center;
+
+  width: 100%;
+
+  display: flex;
+  column-gap: .715rem;
+}
+
+.sticker{
+  place-content: center;
+  place-items: start;
+
+  width: 4rem;
+  height: 4.65rem;
+  padding: 0 .35rem;
+
+  border-radius: .1rem;
+  background: var(--clr-volt);
+  color: var(--clr-casual-black);
+}
+
+.left_num,
+.right_num,
+.heading{
+  font-family: monument;
+  font-size: 2.35rem;
+
+  user-select: none;
+}
+
+.left_num{
+  translate: 0 -.0rem;
+}
+
+.right_num{
+  justify-self: end;
+
+  translate: 0 -.85rem;
+}
+
+.heading{
+  padding-top: .25rem;
+}

@@ -1,3 +1,50 @@
+:root{
+  --clr-black: #131313;
+  --clr-casual-black: #181818;
+  --clr-gray: #353535;
+  --clr-volt: #BDFB04;
+  --clr-silver: #DFDED7;
+  --clr-white: #EBECEE;
+  --clr-body: #f5fbe2;
+  --clr-border: rgba(235, 236, 238, .25);
+
+  /* Fonts Sizing */
+  --font-3xs: 0.25rem;
+  --font-2xs: 0.5rem;
+  --font-xs: 0.75rem;
+  --font-sm: 0.85rem;
+  --font-base: 1rem;
+  --font-md: 1.25rem;
+  --font-3xl: 2.25rem;
+  --font-4xl: 2.5rem;
+  --font-5xl: 2.75rem;
+
+  /* Curves */
+  --ease-in: cubic-bezier(0.30, 0.01, 0.3, 0.99);
+
+  --display: monument; 
+  --body: Inter;
+  --mono: space;
+
+  --font-size: clamp(16px, 1.2vw, 32px);
+}
+
+.fadeUp{
+  will-change: opacity, translate, filter;
+
+  opacity: 0;
+  translate: 0 1.5rem;
+  filter: blur(4px);
+
+  animation: fadeUp var(--speed, 500ms) var(--ease-in) calc(var(--delay) * 40ms) forwards;
+}
+
+@keyframes fadeUp {
+  100% {opacity: 1; translate: 0; filter: blur(0px); }
+}
+
+
+
 *{
   padding: 0;
   margin: 0;

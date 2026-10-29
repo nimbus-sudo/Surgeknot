@@ -1,7 +1,4 @@
-import './Index.css'
-import './Globals.css'
-
-import { Home } from '@views'
+import { Home } from '@pages'
 import { Navbar } from '@components'
 
 export default function App() {

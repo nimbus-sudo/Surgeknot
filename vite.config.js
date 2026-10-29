@@ -14,7 +14,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(import.meta.dirname, './src'),
       '@components': path.resolve(import.meta.dirname, './src/components'),
-      '@views': path.resolve(import.meta.dirname, './src/views'),
+      '@pages': path.resolve(import.meta.dirname, './src/pages'),
       '@utils': path.resolve(import.meta.dirname, './src/utils'),
       '@assets': path.resolve(import.meta.dirname, './src/assets'),
     },
