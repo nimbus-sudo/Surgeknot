@@ -1,7 +1,13 @@
+import { useState } from 'react';
 import styles from './Home.module.css'
 import { Buttons, Heading, IconBox, InfoBox, Marquee, Portrait } from './components'
 
 export default function Home() {
+  const [isInfo, setInfo] = useState('agent');
+  const btnHandle = (status) => {
+    setInfo(status);
+  };
+
   return (
     <>
       <main className={styles.wrapper}>
@@ -10,8 +16,8 @@ export default function Home() {
         <Heading />
 
         <div className={styles.content__container}>
-          <IconBox />
-          <InfoBox />
+          <IconBox onClick={btnHandle} />
+          <InfoBox activeInfo={isInfo} />
           <Buttons />
         </div>
       </main >
