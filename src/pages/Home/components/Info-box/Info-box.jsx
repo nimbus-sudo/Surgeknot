@@ -13,7 +13,7 @@ export default function InfoBox({ activeInfo }) {
     },
     specialty: {
       name: 'Anomaly',
-      desc: 'Quickly accumulating Anomaly Buildup, and triggering massive Attribute Anomaly DMG.'
+      desc: 'Quickly accumulating <b>Anomaly Buildup</b>, and triggering massive <b>Attribute Anomaly DMG</b>.'
     }
   };
   const [info, setInfo] = useState(data.agent);
@@ -34,8 +34,8 @@ export default function InfoBox({ activeInfo }) {
     <>
       <div className={`${styles.wrapper} fadeUp`} style={{ '--delay': '4' }}>
         <h3 className={styles.heading}>{info.name}</h3>
-        <p className={styles.para}>{info.desc}</p>
-      </div>
+        <p className={styles.para} dangerouslySetInnerHTML={{ __html: info.desc }} />
+      </div >
     </>
   );
 }
