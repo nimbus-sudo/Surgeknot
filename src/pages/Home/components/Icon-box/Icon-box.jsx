@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect } from 'react';
 import styles from './Icon-box.module.css'
 
 export default function IconBox({ onClick, status }) {
