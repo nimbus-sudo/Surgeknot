@@ -16,7 +16,7 @@ export default defineConfig({
       '@components': path.resolve(import.meta.dirname, './src/components'),
       '@pages': path.resolve(import.meta.dirname, './src/pages'),
       '@utils': path.resolve(import.meta.dirname, './src/utils'),
-      '@assets': path.resolve(import.meta.dirname, './src/assets'),
+      '@assets': path.resolve(import.meta.dirname, './public'),
     },
   },
 })

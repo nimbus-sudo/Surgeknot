@@ -7,8 +7,6 @@ export default function IconBox({ onClick, status }) {
       const condition = event.target.getAttribute('data-group') === 'Info-box';
 
       if (!condition) onClick('agent');
-
-      console.log(event);
     };
 
     window.addEventListener('click', toggleHandler);

@@ -17,7 +17,7 @@
   height: 100%;
 
   mask-image:
-    linear-gradient(to right, transparent 0%, #000000 25%, #000000 75%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000000 18%, #000000 82%, transparent 100%),
     linear-gradient(to bottom, #000000 50%, transparent 90%);
   mask-composite: intersect;
 }
@@ -28,5 +28,5 @@
 
   aspect-ratio: 9/16;
   object-fit: cover;
-  object-position: center 2rem;
+  object-position: left 2rem;
 }
