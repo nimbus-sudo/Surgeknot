@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Info-box.module.css'
 
-export default function InfoBox({ activeInfo }) {
+export default function InfoBox({ status }) {
   const data = {
     agent: {
       name: 'Phoenix',
@@ -19,7 +19,7 @@ export default function InfoBox({ activeInfo }) {
   const [info, setInfo] = useState(data.agent);
 
   useEffect(() => {
-    switch (activeInfo) {
+    switch (status) {
       case 'attribute':
         return setInfo(data.attribute);
       case 'specialty':
@@ -28,11 +28,11 @@ export default function InfoBox({ activeInfo }) {
         return setInfo(data.agent);
     }
 
-  }, [activeInfo]);
+  }, [status]);
 
   return (
     <>
-      <div className={`${styles.wrapper} fadeUp`} style={{ '--delay': '4' }}>
+      <div className={`${styles.wrapper} fadeUp`} style={{ '--delay': '4' }} data-group='Info-box'>
         <h3 className={styles.heading}>{info.name}</h3>
         <p className={styles.para} dangerouslySetInnerHTML={{ __html: info.desc }} />
       </div >

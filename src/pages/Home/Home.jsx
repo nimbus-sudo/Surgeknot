@@ -16,8 +16,8 @@ export default function Home() {
         <Heading />
 
         <div className={styles.content__container}>
-          <IconBox onClick={btnHandle} />
-          <InfoBox activeInfo={isInfo} />
+          <IconBox onClick={btnHandle} status={isInfo} />
+          <InfoBox status={isInfo} />
           <Buttons />
         </div>
       </main >

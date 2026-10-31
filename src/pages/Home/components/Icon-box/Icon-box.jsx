@@ -1,6 +1,29 @@
+import { useEffect, useState, useRef } from 'react';
 import styles from './Icon-box.module.css'
 
-export default function IconBox({ onClick }) {
+export default function IconBox({ onClick, status }) {
+  useEffect(() => {
+    function toggleHandler(event) {
+      const condition = event.target.getAttribute('data-group') === 'Info-box';
+
+      if (!condition) onClick('agent');
+
+      console.log(event);
+    };
+
+    window.addEventListener('click', toggleHandler);
+
+    return () => window.removeEventListener('click', toggleHandler);
+  }, []);
+
+  function toggleHandl(setStatus) {
+    if (status === setStatus) {
+      onClick('agent');
+    } else {
+      onClick(setStatus);
+    }
+  };
+
   return (
     <>
       <div className={styles.wrapper}>
@@ -11,17 +34,15 @@ export default function IconBox({ onClick }) {
 
           <button
             className={`${styles.icon} ${styles.btn}`}
-            onClick={() => onClick('attribute')}
-            onMouseEnter={() => onClick('attribute')}
-            onMouseLeave={() => onClick('agent')}
+            data-group='Info-box'
+            onClick={() => toggleHandl('attribute')}
           >
             <img src="icons/Icon_Frost_dark.webp" alt="Frost Atrribte" />
           </button>
           <button
             className={`${styles.icon} ${styles.btn}`}
-            onClick={() => onClick('specialty')}
-            onMouseEnter={() => onClick('specialty')}
-            onMouseLeave={() => onClick('agent')}
+            data-group='Info-box'
+            onClick={() => toggleHandl('specialty')}
           >
             <img src="icons/Icon_Anomaly_dark.webp" alt="Frost Atrribte" />
           </button>
